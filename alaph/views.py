@@ -26,3 +26,9 @@ class GenerateRandomUserView(FormView):
 class UsersListView(ListView):
     template_name = 'users_list.html'
     model = User
+
+
+class Index():
+    def index(self):
+        template_name = 'base.html'
+        return render(request, template_name)
